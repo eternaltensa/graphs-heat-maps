@@ -26,7 +26,7 @@ matplotlib.use('agg')
 explode = (0.05, 0.0, 0.0, 0.0, 0.0)
 now = datetime.now()
 
-bot_token = '6554690539:AAHKC7ME3FrWTEoIDoPNvvpMTd-vJB_cWxI'
+bot_token = 'token'
 bot = telebot.TeleBot(bot_token)
 chat_id= '-1001900597631'
 
@@ -41,11 +41,11 @@ rc('font', **font)
 
 
 def monthly():
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -79,7 +79,7 @@ def monthly():
             print(f"{proekt}  {strana} {vremya}")
             i += 1
 
-    url_2 = "https://form.sales-inquiries.ae/api/forms/?page=2&per_page=7000&ordering=-created_at"
+    url_2 = ""
 
     payload = {}
     headers = {
@@ -101,7 +101,7 @@ def monthly():
             print(f"{proekt}  {strana} {vremya}")
             i += 1
 
-    url_3 = "https://form.sales-inquiries.ae/api/forms/?page=3&per_page=7000&ordering=-created_at"
+    url_3 = ""
 
     payload = {}
     headers = {
@@ -226,7 +226,7 @@ def daily():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=1000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -333,11 +333,11 @@ def daily():
     plt2.clf()
 
 def weekly():
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -349,7 +349,7 @@ def weekly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
