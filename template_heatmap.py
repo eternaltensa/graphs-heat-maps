@@ -26,9 +26,9 @@ import matplotlib
 
 
 matplotlib.use('agg')
-bot_token = '6581480693:AAFSrGw0E9QTtNJU1PbJ_Ii65-e2nnvKsJ8'
+bot_token = 'bot token'
 bot = telebot.TeleBot(bot_token)
-chat_id= '-1001900597631'
+chat_id= 'telegram chat id'
 
 
 
@@ -36,11 +36,11 @@ def daily():
     values = Counter()
     values2 = Counter()
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ def daily():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=2000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -154,11 +154,11 @@ def weekly():
     values = Counter()
     values2 = Counter()
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -170,7 +170,7 @@ def weekly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=2000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -273,11 +273,11 @@ def monthly():
     values = Counter()
     values2 = Counter()
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -289,7 +289,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=1&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -318,11 +318,11 @@ def monthly():
                             user_counts[(country, project)] = 1
 
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -334,7 +334,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=2&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -363,11 +363,11 @@ def monthly():
 
 
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -379,7 +379,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=3&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -408,11 +408,11 @@ def monthly():
 
 
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -424,7 +424,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=4&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
@@ -452,11 +452,11 @@ def monthly():
                             user_counts[(country, project)] = 1
 
 
-    token = "https://form.sales-inquiries.ae/api/users/login/"
+    token = ""
 
     payload_token = json.dumps({
-        "username": "enver",
-        "password": "J3d5689kw2"
+        "username": "",
+        "password": ""
     })
     headers = {
         'Content-Type': 'application/json'
@@ -468,7 +468,7 @@ def monthly():
     access = jtoken['access_token']
     print(access)
 
-    url = "https://form.sales-inquiries.ae/api/forms/?page=5&per_page=7000&ordering=-created_at"
+    url = ""
 
     payload = {}
     headers = {
