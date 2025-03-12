@@ -5,7 +5,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 import telebot
 bot_token = 'token'
 bot = telebot.TeleBot(bot_token)
-chat_id= '-1001900597631'
+chat_id= ''
 
 def doc():
     pdf_file = "Monthly_report.pdf"
