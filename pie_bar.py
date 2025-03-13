@@ -28,7 +28,7 @@ now = datetime.now()
 
 bot_token = 'token'
 bot = telebot.TeleBot(bot_token)
-chat_id= '-1001900597631'
+chat_id= ''
 
 values = Counter()
 values2 = Counter()
@@ -137,7 +137,7 @@ def monthly():
     fig, ax = plt_bar.subplots(facecolor='black')
     plt_bar.figure(figsize=(15, 9), dpi=100, facecolor='black')
     # plt.subplots_adjust(top=0.9, bottom=0.25, left=0.11, right=0.9)
-    plt_bar.bar(labels, sizes, color=bar_colors )  # создаем столбчатую диаграмму
+    plt_bar.bar(labels, sizes, color=bar_colors ) 
     plt_bar.xlabel('Countries', color='white')
     plt2_bar.xticks(color='white')
     plt_bar.ylabel('Forms', color='white')
@@ -149,7 +149,7 @@ def monthly():
     plt_bar.savefig(buf_bar, format='png',dpi=100)
     file_name = "monthly_country_bar.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf_bar.getbuffer())
     buf_bar.seek(0)
@@ -164,7 +164,7 @@ def monthly():
     plt.savefig(buf, format='png')
     file_name = "monthly_country_pie.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf.getbuffer())
     buf.seek(0)
@@ -177,7 +177,7 @@ def monthly():
     labels_project = [str(value2) for value2, count in top_results_project]
     sizes_project = [count for value2, count in top_results_project]
 
-    # BAR PROJECTS
+
     plt2_bar.bar(labels_project, sizes_project, color=bar_colors)
     plt2_bar.xlabel('Projects')
     plt2_bar.ylabel('Forms')
@@ -186,7 +186,7 @@ def monthly():
     plt2_bar.savefig(buf2_bar, format='png')
     file_name = "monthly_project_bar.png"
 
-    # Записать содержимое буфера в файл
+ 
     with open(file_name, 'wb') as f:
         f.write(buf2_bar.getbuffer())
     buf2_bar.seek(0)
@@ -201,7 +201,7 @@ def monthly():
     plt2.savefig(buf2, format='png')
     file_name = "monthly_project_pie.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf2.getbuffer())
     buf2.seek(0)
@@ -261,7 +261,7 @@ def daily():
     fig, ax = plt_bar.subplots(facecolor='black')
     plt_bar.figure(figsize=(15, 9), dpi=100, facecolor='black')
     # plt.subplots_adjust(top=0.9, bottom=0.25, left=0.11, right=0.9)
-    plt_bar.bar(labels, sizes, color=bar_colors)  # создаем столбчатую диаграмму
+    plt_bar.bar(labels, sizes, color=bar_colors) 
     plt_bar.xlabel('Countries', color='white')
     plt2_bar.xticks(color='white')
     plt_bar.ylabel('Forms', color='white')
@@ -273,7 +273,7 @@ def daily():
     plt_bar.savefig(buf_bar, format='png', dpi=100)
     file_name = "daily_country_bar.png"
 
-    # Записать содержимое буфера в файл
+ 
     with open(file_name, 'wb') as f:
         f.write(buf_bar.getbuffer())
     buf_bar.seek(0)
@@ -288,7 +288,7 @@ def daily():
     plt.savefig(buf, format='png',dpi=100)
     file_name = "daily_country_pie.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf.getbuffer())
     buf.seek(0)
@@ -310,7 +310,7 @@ def daily():
     plt2_bar.savefig(buf2_bar, format='png')
     file_name = "daily_project_bar.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf2_bar.getbuffer())
     buf2_bar.seek(0)
@@ -325,7 +325,7 @@ def daily():
     plt2.savefig(buf2, format='png')
     file_name = "daily_project_pie.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf2.getbuffer())
     buf2.seek(0)
@@ -383,7 +383,7 @@ def weekly():
     fig, ax = plt_bar.subplots(facecolor='black')
     plt_bar.figure(figsize=(15, 9), dpi=100, facecolor='black')
     # plt.subplots_adjust(top=0.9, bottom=0.25, left=0.11, right=0.9)
-    plt_bar.bar(labels, sizes, color=bar_colors)  # создаем столбчатую диаграмму
+    plt_bar.bar(labels, sizes, color=bar_colors)  
     plt_bar.xlabel('Countries', color='white')
     plt_bar.xticks(color='white')
     plt_bar.ylabel('Forms', color='white')
@@ -395,7 +395,7 @@ def weekly():
     plt_bar.savefig(buf_bar, format='png', dpi=100)
     file_name = "weekly_country_bar.png"
 
-    # Записать содержимое буфера в файл
+ 
     with open(file_name, 'wb') as f:
         f.write(buf_bar.getbuffer())
     buf_bar.seek(0)
@@ -410,7 +410,7 @@ def weekly():
     plt.savefig(buf, format='png')
     file_name = "weekly_country_pie.png"
 
-    # Записать содержимое буфера в файл
+ 
     with open(file_name, 'wb') as f:
         f.write(buf.getbuffer())
     buf.seek(0)
@@ -432,7 +432,7 @@ def weekly():
     plt2_bar.savefig(buf2_bar, format='png')
     file_name = "weekly_project_bar.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf2_bar.getbuffer())
     buf2_bar.seek(0)
@@ -447,7 +447,7 @@ def weekly():
     plt2.savefig(buf2, format='png')
     file_name = "weekly_project_pie.png"
 
-    # Записать содержимое буфера в файл
+
     with open(file_name, 'wb') as f:
         f.write(buf2.getbuffer())
     buf2.seek(0)
@@ -459,19 +459,5 @@ daily()
 weekly()
 monthly()
 
-# scheduler = BlockingScheduler()
-# #EVERY MINUTE
-# scheduler.add_job(daily, 'cron', day_of_week='*', hour='*', minute='*')
-
-# # Каждый день в 00:01
-# scheduler.add_job(daily, 'cron', day_of_week='*', hour='0', minute='1')
-#
-# # Каждый понедельник в 00:10
-# scheduler.add_job(weekly, 'cron', day_of_week='mon', hour='0', minute='10')
-#
-# # Каждое первое число месяца в 00:20
-# scheduler.add_job(monthly, 'cron', day='1', hour='0', minute='20')
-
-# scheduler.start()
 
 
